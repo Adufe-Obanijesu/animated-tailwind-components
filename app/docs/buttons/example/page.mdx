@@ -1,0 +1,31 @@
+import { Tabs } from "nextra/components";
+import Example from "@/components/buttons/example/framer/Example";
+import Preview from "@/components/Preview";
+
+# Example Button
+
+This is an example button that can be used for several examples
+
+<Tabs items={["Preview", "Code"]}>
+  <Tabs.Tab>
+      <Preview>
+        <Example />
+      </Preview>
+  </Tabs.Tab>
+  <Tabs.Tab>
+    ```jsx copy
+    export default function Example() {
+      return (
+        <button className="px-8 py-2 rounded-full relative bg-slate-700 text-white text-sm hover:shadow-2xl hover:shadow-white/[0.1] transition duration-200 border border-slate-600">
+          <div className="absolute inset-x-0 h-px w-1/2 mx-auto -top-px shadow-2xl  bg-gradient-to-r from-transparent via-teal-500 to-transparent" />
+          <span className="relative z-20">Top gradient</span>
+        </button>
+      );
+    }
+  ```
+   </Tabs.Tab>
+</Tabs>
+
+
+
+
